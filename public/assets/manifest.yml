@@ -1,10 +1,4 @@
 ---
-rails.png: rails.png
-rails/index.png: rails.png
-application.js: application.js
-application/index.js: application.js
-application.css: application.css
-application/index.css: application.css
 glyphicons-halflings-regular.eot: glyphicons-halflings-regular.eot
 glyphicons-halflings-regular/index.eot: glyphicons-halflings-regular.eot
 glyphicons-halflings-regular.svg: glyphicons-halflings-regular.svg
@@ -13,6 +7,18 @@ glyphicons-halflings-regular.ttf: glyphicons-halflings-regular.ttf
 glyphicons-halflings-regular/index.ttf: glyphicons-halflings-regular.ttf
 glyphicons-halflings-regular.woff: glyphicons-halflings-regular.woff
 glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular.woff
+CarouselBackground.jpg: CarouselBackground.jpg
+CarouselBackground/index.jpg: CarouselBackground.jpg
+JacobsMain.JPG: JacobsMain.JPG
+JacobsMain/index.JPG: JacobsMain.JPG
+jacobs_logo.png: jacobs_logo.png
+jacobs_logo/index.png: jacobs_logo.png
+rails.png: rails.png
+rails/index.png: rails.png
+application.js: application.js
+application/index.js: application.js
+application.css: application.css
+application/index.css: application.css
 bootstrap-theme.css.map: bootstrap-theme.css.map
 bootstrap-theme/index.css.map: bootstrap-theme.css.map
 bootstrap.css.map: bootstrap.css.map
