@@ -1,4 +1,4 @@
-SampleApp::Application.routes.draw do
+StudentsAtJacobs::Application.routes.draw do
     root to: "StaticPages#home"
     match "/home", to: "StaticPages#home"
   # The priority is based upon order of creation:
