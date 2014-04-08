@@ -1,6 +1,7 @@
 StudentsAtJacobs::Application.routes.draw do
     root to: "StaticPages#home"
     match "/home", to: "StaticPages#home"
+    match "/wall", to: "StaticPages#wall"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
