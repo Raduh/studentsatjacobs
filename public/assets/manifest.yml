@@ -11,6 +11,8 @@ CarouselBackground.jpg: CarouselBackground.jpg
 CarouselBackground/index.jpg: CarouselBackground.jpg
 JacobsMain.JPG: JacobsMain.JPG
 JacobsMain/index.JPG: JacobsMain.JPG
+jacobsFavicon.ico: jacobsFavicon.ico
+jacobsFavicon/index.ico: jacobsFavicon.ico
 jacobs_logo.png: jacobs_logo.png
 jacobs_logo/index.png: jacobs_logo.png
 rails.png: rails.png

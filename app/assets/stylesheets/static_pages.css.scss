@@ -2,10 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+$gray: #555;
+$grayDarker: #222;
+
 /* because of the heighty bootstrap navbar */
 body {
-    .jwall {
+    .jcontainer {
         padding-top: 60px;
     }
 }
 
+/* footer */
+
+.jfooter {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+
+  ul {
+    float: left;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+ 
