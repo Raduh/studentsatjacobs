@@ -1,4 +1,6 @@
 StudentsAtJacobs::Application.routes.draw do
+  get "users/new"
+
     root to: "StaticPages#home"
     match "/home", to: "StaticPages#home"
     match "/wall", to: "StaticPages#wall"
