@@ -9,11 +9,11 @@ class UsersController < ApplicationController
       @pass = params[:ldapPass]
 
       if isUserLegit?(@usr, @pass)
-          flash[:success] = "You're logged in"
+          flash.now[:success] = "You're logged in"
           cookies[:logged_in] = @usr
           render 'auth'
       else
-          flash[:danger] = "You seem to be wrong"
+          flash.now[:danger] = "You seem to be wrong"
           render 'auth'
       end
   end
