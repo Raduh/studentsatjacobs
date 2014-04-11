@@ -36,9 +36,10 @@ body {
   ul {
     float: left;
     list-style: none;
+    margin-left: -65px;
     li {
       float: left;
-      margin-left: 10px;
+      padding-left: 20px;
     }
   }
 }
