@@ -6439,3 +6439,39 @@ body .jcontainer {
   float: left;
   margin-left: 10px;
 }
+/* because of the heighty bootstrap navbar */
+/* line 12, ../../app/assets/stylesheets/users.css.scss */
+body .jcontainer {
+  padding-top: 85px;
+}
+
+/* footer */
+/* line 19, ../../app/assets/stylesheets/users.css.scss */
+.jfooter {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999999;
+}
+/* line 24, ../../app/assets/stylesheets/users.css.scss */
+.jfooter a {
+  color: #555555;
+}
+/* line 26, ../../app/assets/stylesheets/users.css.scss */
+.jfooter a:hover {
+  color: #222222;
+}
+/* line 30, ../../app/assets/stylesheets/users.css.scss */
+.jfooter small {
+  float: left;
+}
+/* line 34, ../../app/assets/stylesheets/users.css.scss */
+.jfooter ul {
+  float: left;
+  list-style: none;
+}
+/* line 37, ../../app/assets/stylesheets/users.css.scss */
+.jfooter ul li {
+  float: left;
+  margin-left: 10px;
+}

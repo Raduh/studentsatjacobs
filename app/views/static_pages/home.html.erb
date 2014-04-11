@@ -3,7 +3,9 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
 <div class="container marketing">
   <%= render 'static_pages/topnews' %>        
   <%= render 'static_pages/featurettes' %>  

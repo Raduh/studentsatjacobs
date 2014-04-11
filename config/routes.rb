@@ -1,11 +1,14 @@
 StudentsAtJacobs::Application.routes.draw do
   get "users/new"
 
-    root to: "StaticPages#home"
-    match "/home", to: "StaticPages#home"
-    match "/wall", to: "StaticPages#wall"
-    match "/about", to: "StaticPages#about"
-    match "/contact", to: "StaticPages#contact"
+  root to: "StaticPages#home"
+  match "/home", to: "StaticPages#home"
+  match "/wall", to: "StaticPages#wall"
+  match "/about", to: "StaticPages#about"
+  match "/contact", to: "StaticPages#contact"
+  
+  match "/auth", to: "Users#auth"
+  match "/doAuth", to: "Users#doAuth"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

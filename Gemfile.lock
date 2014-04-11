@@ -63,6 +63,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     multi_json (1.8.2)
+    net-ldap (0.5.1)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     pg (0.12.2)
@@ -142,6 +143,7 @@ DEPENDENCIES
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
   jquery-rails
+  net-ldap
   pg (= 0.12.2)
   rails (= 3.2.13)
   rspec-rails (= 2.9.0)

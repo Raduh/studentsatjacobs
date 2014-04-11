@@ -1,4 +1,8 @@
-<form class="form-horizontal">
+<div class="container jcontainer">
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+<form accept-charset="UTF-8" action="/doAuth" method="post" class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
@@ -26,10 +30,10 @@
 <div class="control-group">
   <label class="control-label" for="ldapLogin"></label>
   <div class="controls">
-    <button id="ldapLogin" name="ldapLogin" class="btn btn-large btn-primary">Log in</button>
+    <button id="ldapLogin" name="ldapLogin" type="submit" class="btn btn-large btn-primary">Log in</button>
   </div>
 </div>
 
 </fieldset>
 </form>
-
+</div>
