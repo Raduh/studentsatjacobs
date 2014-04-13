@@ -6433,10 +6433,12 @@ body .jcontainer {
 .jfooter ul {
   float: left;
   list-style: none;
+  margin-left: -65px;
 }
-/* line 40, ../../app/assets/stylesheets/static_pages.css.scss */
+/* line 41, ../../app/assets/stylesheets/static_pages.css.scss */
 .jfooter ul li {
   float: left;
+  padding-left: 20px;
 }
 /* because of the heighty bootstrap navbar */
 /* line 12, ../../app/assets/stylesheets/users.css.scss */
@@ -6472,5 +6474,4 @@ body .jcontainer {
 /* line 37, ../../app/assets/stylesheets/users.css.scss */
 .jfooter ul li {
   float: left;
-  margin-left: 10px;
 }

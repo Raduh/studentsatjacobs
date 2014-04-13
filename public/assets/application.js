@@ -12165,4 +12165,16 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
 
 
-;
+
+$(function() {
+   if (document.location.pathname == '/wall') {
+        $("#navTabList li[class='active']").removeClass("active");
+        $("#wallTab").addClass("active");
+   }
+
+   if (document.location.pathname == '/') {
+        $("#navTabList li[class='active']").removeClass("active");
+        $("#homeTab").addClass("active");
+   }
+});
+
