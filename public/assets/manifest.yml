@@ -21,9 +21,5 @@ application.js: application.js
 application/index.js: application.js
 application.css: application.css
 application/index.css: application.css
-bootstrap-theme.css.map: bootstrap-theme.css.map
-bootstrap-theme/index.css.map: bootstrap-theme.css.map
-bootstrap.css.map: bootstrap.css.map
-bootstrap/index.css.map: bootstrap.css.map
 jquery.min.map: jquery.min.map
 jquery/index.min.map: jquery.min.map
