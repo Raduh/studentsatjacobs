@@ -9,8 +9,12 @@ glyphicons-halflings-regular.woff: glyphicons-halflings-regular.woff
 glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular.woff
 CarouselBackground.jpg: CarouselBackground.jpg
 CarouselBackground/index.jpg: CarouselBackground.jpg
-JacobsMain.JPG: JacobsMain.JPG
-JacobsMain/index.JPG: JacobsMain.JPG
+bbqImage.JPG: bbqImage.JPG
+bbqImage/index.JPG: bbqImage.JPG
+cheerleadingImage.JPG: cheerleadingImage.JPG
+cheerleadingImage/index.JPG: cheerleadingImage.JPG
+cidImage.JPG: cidImage.JPG
+cidImage/index.JPG: cidImage.JPG
 jacobsFavicon.ico: jacobsFavicon.ico
 jacobsFavicon/index.ico: jacobsFavicon.ico
 jacobs_logo.png: jacobs_logo.png
