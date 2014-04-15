@@ -43,4 +43,17 @@ body {
     }
   }
 }
- 
+
+/* More emphasize on the content */
+
+.carousel-caption {
+    h1 {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    p {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+}
+
+
