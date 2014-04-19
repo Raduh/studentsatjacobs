@@ -6373,10 +6373,9 @@ body .jcontainer {
       padding-left: 20px; }
 
 /* More emphasize on the content */
-.carousel-caption h1 {
-  background-color: rgba(255, 0, 0, 0.5); }
-.carousel-caption p {
-  background-color: rgba(255, 0, 0, 0.5); }
+.carousel-caption .contentDescriptor {
+  background-color: rgba(255, 0, 0, 0.5);
+  display: inline-block; }
 /* because of the heighty bootstrap navbar */
 body .jcontainer {
   padding-top: 85px; }
