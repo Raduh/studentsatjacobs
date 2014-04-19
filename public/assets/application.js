@@ -11775,11 +11775,11 @@ $(function() {
    if (document.location.pathname == '/wall') {
         $("#navTabList li[class='active']").removeClass("active");
         $("#wallTab").addClass("active");
-   }
-
-   if (document.location.pathname == '/') {
+   } else if (document.location.pathname == '/') {
         $("#navTabList li[class='active']").removeClass("active");
         $("#homeTab").addClass("active");
+   } else {
+        $("#navTabList li[class='active']").removeClass("active");
    }
 });
 
