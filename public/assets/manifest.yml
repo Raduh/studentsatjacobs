@@ -15,8 +15,10 @@ cheerleadingImage.JPG: cheerleadingImage.JPG
 cheerleadingImage/index.JPG: cheerleadingImage.JPG
 cidImage.JPG: cidImage.JPG
 cidImage/index.JPG: cidImage.JPG
-jacobsFavicon.ico: jacobsFavicon.ico
-jacobsFavicon/index.ico: jacobsFavicon.ico
+jacobsFavicon.png: jacobsFavicon.png
+jacobsFavicon/index.png: jacobsFavicon.png
+jacobsFaviconOld.ico: jacobsFaviconOld.ico
+jacobsFaviconOld/index.ico: jacobsFaviconOld.ico
 jacobs_logo.png: jacobs_logo.png
 jacobs_logo/index.png: jacobs_logo.png
 rails.png: rails.png
