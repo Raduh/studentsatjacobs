@@ -1,3 +1,9 @@
+<% provide(:title, 'Write Article') %>
+<div class ="container jcontainer">
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
 <form class="form-horizontal">
 <fieldset>
 
@@ -8,8 +14,7 @@
 <div class="control-group">
   <label class="control-label" for="newPageTitle">Title</label>
   <div class="controls">
-    <input id="newPageTitle" name="newPageTitle" type="text" placeholder="What is this about?" class="input-xlarge" required="">
-    <p class="help-block">Title of the new page</p>
+    <input id="newPageTitle" name="newPageTitle" type="text" placeholder="What is this about?" class="input-xlarge articleFormInput" required="">
   </div>
 </div>
 
@@ -17,8 +22,7 @@
 <div class="control-group">
   <label class="control-label" for="newPageImage">Some pic?</label>
   <div class="controls">
-    <input id="newPageImage" name="newPageImage" type="text" placeholder="URL of the photo" class="input-medium">
-    <p class="help-block">URL of the photo</p>
+    <input id="newPageImage" name="newPageImage" type="text" placeholder="URL of the photo" class="input-medium articleFormInput">
   </div>
 </div>
 
@@ -26,7 +30,7 @@
 <div class="control-group">
   <label class="control-label" for="newPageContent">Content</label>
   <div class="controls">                     
-    <textarea id="newPageContent" name="newPageContent">Tell us something...</textarea>
+    <textarea id="newPageContent" name="newPageContent" class="articleFormInput" placeholder="Tell us something..."></textarea>
   </div>
 </div>
 
@@ -39,4 +43,4 @@
 
 </fieldset>
 </form>
-
+</div>

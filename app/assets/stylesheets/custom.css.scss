@@ -1,0 +1,154 @@
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+$gray: #555;
+$grayDarker: #222;
+
+.authFormInput {
+    padding: 5px;
+}
+.articleFormInput {
+    border: 1px solid #bbb;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+/* textarea for new articles */
+#newPageContent {
+    width: 350px;
+    height: 150px;
+}
+
+/* because of the heighty bootstrap navbar */
+body {
+    .jcontainer {
+        padding-top: 60px;
+    }
+}
+
+/* footer */
+
+.jfooter {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+
+  ul {
+    float: left;
+    list-style: none;
+    margin-left: -65px;
+    li {
+      float: left;
+      padding-left: 20px;
+    }
+  }
+}
+
+/* More emphasize on the content */
+
+.carousel-caption {
+    .contentDescriptor {
+        background-color: rgba(255, 0, 0, 0.5);
+        display: inline-block;
+    }
+}
+
+
+/* some media queries for search bar*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .customSearchBar {
+        width: 200px; 
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    .customSearchBar {
+        width: 300px; 
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .customSearchBar {
+        width: 200px; 
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .customSearchBar {
+        width: 500px; 
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    .customSearchBar {
+        width: 500px; 
+    }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .customSearchBar {
+        width: 500px; 
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .customSearchBar {
+        width: 700px; 
+    }
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    .customSearchBar {
+        width: 800px; 
+    }
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .customSearchBar {
+        width: 200px; 
+    }
+
+}

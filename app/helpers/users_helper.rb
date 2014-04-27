@@ -1,17 +1,23 @@
 require 'net/ldap'
 
 module UsersHelper
-    def isUserLegit? (user, pass)
+    def testCredentials(user, pass)
         if (user == "admin" && pass == "admin")
-            return true
+            return 0
         end
         if (user == "admin" && pass != "admin")
-            return false
+            return 1
         end
         ldap = Net::LDAP.new
         ldap.host = "jacobs.jacobs-university.de"
         ldap.port = 389
         ldap.auth "jacobs\\#{user}", pass
-        return ldap.bind
+        if (ldap.bind)
+            return 0
+        else
+            return 1
+        end
+        rescue Exception
+            return 2;
     end
 end

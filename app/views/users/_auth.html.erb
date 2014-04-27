@@ -1,3 +1,4 @@
+<% provide(:title, 'Login') %>
 <div class="container jcontainer">
 <% flash.each do |key, value| %>
   <div class="alert alert-<%= key %>"><%= value %></div>
@@ -12,7 +13,7 @@
 <div class="control-group">
   <label class="control-label" for="ldapUser">Username</label>
   <div class="controls">
-    <input id="ldapUser" name="ldapUser" type="text" placeholder="" class="input-medium" required="">
+    <input id="ldapUser" name="ldapUser" type="text" placeholder="" class="input-medium authFormInput" required="">
     
   </div>
 </div>
@@ -21,7 +22,7 @@
 <div class="control-group">
   <label class="control-label" for="ldapPass">Password</label>
   <div class="controls">
-    <input id="ldapPass" name="ldapPass" type="password" placeholder="" class="input-medium" required="">
+    <input id="ldapPass" name="ldapPass" type="password" placeholder="" class="input-medium authFormInput " required="">
     
   </div>
 </div>
