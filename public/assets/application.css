@@ -15,40 +15,67 @@
 /* some media queries for search bar*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 24, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 200px; } }
+    width: 200px;
+  }
+}
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
+  /* line 32, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 300px; } }
+    width: 300px;
+  }
+}
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
+  /* line 40, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 200px; } }
+    width: 200px;
+  }
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 50, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 500px; } }
+    width: 500px;
+  }
+}
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* line 61, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 500px; } }
+    width: 500px;
+  }
+}
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 72, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 500px; } }
+    width: 500px;
+  }
+}
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+  /* line 81, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 700px; } }
+    width: 700px;
+  }
+}
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
+  /* line 90, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 1200px; } }
+    width: 800px;
+  }
+}
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 100, ../../app/assets/stylesheets/application.css.scss */
   .customSearchBar {
-    width: 200px; } }
+    width: 200px;
+  }
+}
 /*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -6349,51 +6376,81 @@ body {
 }
 /* mixins, variables, etc. */
 /* because of the heighty bootstrap navbar */
+/* line 15, ../../app/assets/stylesheets/static_pages.css.scss */
 body .jcontainer {
-  padding-top: 60px; }
+  padding-top: 60px;
+}
 
 /* footer */
+/* line 22, ../../app/assets/stylesheets/static_pages.css.scss */
 .jfooter {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999999; }
-  .jfooter a {
-    color: #555555; }
-    .jfooter a:hover {
-      color: #222222; }
-  .jfooter small {
-    float: left; }
-  .jfooter ul {
-    float: left;
-    list-style: none;
-    margin-left: -65px; }
-    .jfooter ul li {
-      float: left;
-      padding-left: 20px; }
+  color: #999999;
+}
+/* line 27, ../../app/assets/stylesheets/static_pages.css.scss */
+.jfooter a {
+  color: #555555;
+}
+/* line 29, ../../app/assets/stylesheets/static_pages.css.scss */
+.jfooter a:hover {
+  color: #222222;
+}
+/* line 33, ../../app/assets/stylesheets/static_pages.css.scss */
+.jfooter small {
+  float: left;
+}
+/* line 37, ../../app/assets/stylesheets/static_pages.css.scss */
+.jfooter ul {
+  float: left;
+  list-style: none;
+  margin-left: -65px;
+}
+/* line 41, ../../app/assets/stylesheets/static_pages.css.scss */
+.jfooter ul li {
+  float: left;
+  padding-left: 20px;
+}
 
 /* More emphasize on the content */
+/* line 51, ../../app/assets/stylesheets/static_pages.css.scss */
 .carousel-caption .contentDescriptor {
   background-color: rgba(255, 0, 0, 0.5);
-  display: inline-block; }
+  display: inline-block;
+}
 /* because of the heighty bootstrap navbar */
+/* line 12, ../../app/assets/stylesheets/users.css.scss */
 body .jcontainer {
-  padding-top: 85px; }
+  padding-top: 85px;
+}
 
 /* footer */
+/* line 19, ../../app/assets/stylesheets/users.css.scss */
 .jfooter {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999999; }
-  .jfooter a {
-    color: #555555; }
-    .jfooter a:hover {
-      color: #222222; }
-  .jfooter small {
-    float: left; }
-  .jfooter ul {
-    float: left;
-    list-style: none; }
-    .jfooter ul li {
-      float: left; }
+  color: #999999;
+}
+/* line 24, ../../app/assets/stylesheets/users.css.scss */
+.jfooter a {
+  color: #555555;
+}
+/* line 26, ../../app/assets/stylesheets/users.css.scss */
+.jfooter a:hover {
+  color: #222222;
+}
+/* line 30, ../../app/assets/stylesheets/users.css.scss */
+.jfooter small {
+  float: left;
+}
+/* line 34, ../../app/assets/stylesheets/users.css.scss */
+.jfooter ul {
+  float: left;
+  list-style: none;
+}
+/* line 37, ../../app/assets/stylesheets/users.css.scss */
+.jfooter ul li {
+  float: left;
+}
