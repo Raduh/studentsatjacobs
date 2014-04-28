@@ -2,12 +2,6 @@ require 'net/ldap'
 
 module UsersHelper
     def testCredentials(user, pass)
-        if (user == "admin" && pass == "admin")
-            return 0
-        end
-        if (user == "admin" && pass != "admin")
-            return 1
-        end
         ldap = Net::LDAP.new
         ldap.host = "jacobs.jacobs-university.de"
         ldap.port = 389
