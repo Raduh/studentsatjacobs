@@ -4,5 +4,5 @@ class Article < ActiveRecord::Base
   validates :username, presence: true
   validates :content,  presence: true, length: { minimum: 100 }
 
-  default_scope_order: 'microposts.created_at DESC'
+  #default_scope_order: 'microposts.created_at DESC'
 end

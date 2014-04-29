@@ -1,0 +1,19 @@
+<% provide(:title, 'Wall') %>
+<div class="container jcontainer">
+  <h1 >Latest articles</h1>
+  <%= link_to "Write article!", write_path, class: "btn btn-large btn-primary" %>
+
+  <% @articles.each do |article| %>
+    <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><%= article.title %></h2>
+          <p class="lead"><%= article.content %></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="<%= article.imageurl %>" alt="Article picture">
+        </div>
+      </div>
+    <% end %>
+
+</div>

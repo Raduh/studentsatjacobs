@@ -3,7 +3,7 @@ StudentsAtJacobs::Application.routes.draw do
 
   root to: "StaticPages#home"
   match "/home", to: "StaticPages#home"
-  match "/wall", to: "StaticPages#wall"
+  match "/wall", to: "Articles#wall"
   match "/about", to: "StaticPages#about"
   match "/contact", to: "StaticPages#contact"
   
