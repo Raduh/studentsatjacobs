@@ -11,7 +11,7 @@
           <p class="lead"><%= article.content %></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="<%= article.imageurl %>" alt="Article picture">
+          <img class="featurette-image img-responsive" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
         </div>
       </div>
     <% end %>
