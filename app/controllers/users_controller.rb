@@ -32,6 +32,11 @@ class UsersController < ApplicationController
       end
       returnCode = testCredentials(@usr, @pass)
       if (returnCode == 0) 
+          if !(User.find_by_email @usr)
+              usr = User.new
+              usr.email = @usr
+              usr.save
+          end
           flash[:success] = "You're logged in"
           cookies[:logged_in] = @usr
           redirect_to write_path
