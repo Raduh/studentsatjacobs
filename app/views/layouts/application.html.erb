@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="/assets/jacobsFavicon.png">
   <!-- Bootstrap core CSS -->
   <link href="/assets/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/calendar.css" rel="stylesheet">
   <!-- Custom styles for this template -->
 
 
@@ -26,7 +27,17 @@
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/underscore.js"></script>
   <script src="/assets/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/calendar.js"></script>
+  <script type="text/javascript" src="/assets/controls.js"></script>
+  <script type="text/javascript">
+      var calendar = $("#calendar").calendar(
+          {
+            tmpl_path: "/tmpls/",
+            events_source: function() { return []; }
+            });
+  </script>
 
 </body>
 </html>
