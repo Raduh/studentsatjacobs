@@ -6828,21 +6828,27 @@ body {
 }
 /* mixins, variables, etc. */
 /* line 9, ../../app/assets/stylesheets/custom.css.scss */
+.articlePic {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/* line 13, ../../app/assets/stylesheets/custom.css.scss */
 #WriteArticleSpan * {
   display: inline-block;
 }
 
-/* line 13, ../../app/assets/stylesheets/custom.css.scss */
+/* line 17, ../../app/assets/stylesheets/custom.css.scss */
 #WriteArticleSpan a {
   margin-top: 12px;
 }
 
-/* line 17, ../../app/assets/stylesheets/custom.css.scss */
+/* line 21, ../../app/assets/stylesheets/custom.css.scss */
 .authFormInput {
   padding: 5px;
 }
 
-/* line 20, ../../app/assets/stylesheets/custom.css.scss */
+/* line 24, ../../app/assets/stylesheets/custom.css.scss */
 .articleFormInput {
   border: 1px solid #bbb;
   padding: 10px;
@@ -6852,52 +6858,52 @@ body {
 }
 
 /* textarea for new articles */
-/* line 28, ../../app/assets/stylesheets/custom.css.scss */
+/* line 32, ../../app/assets/stylesheets/custom.css.scss */
 #newPageContent {
   width: 350px;
   height: 150px;
 }
 
 /* because of the heighty bootstrap navbar */
-/* line 35, ../../app/assets/stylesheets/custom.css.scss */
+/* line 39, ../../app/assets/stylesheets/custom.css.scss */
 body .jcontainer {
   padding-top: 60px;
 }
 
 /* footer */
-/* line 42, ../../app/assets/stylesheets/custom.css.scss */
+/* line 46, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999999;
 }
-/* line 47, ../../app/assets/stylesheets/custom.css.scss */
+/* line 51, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter a {
   color: #555555;
 }
-/* line 49, ../../app/assets/stylesheets/custom.css.scss */
+/* line 53, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter a:hover {
   color: #222222;
 }
-/* line 53, ../../app/assets/stylesheets/custom.css.scss */
+/* line 57, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter small {
   float: left;
 }
-/* line 57, ../../app/assets/stylesheets/custom.css.scss */
+/* line 61, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter ul {
   float: left;
   list-style: none;
   margin-left: -65px;
 }
-/* line 61, ../../app/assets/stylesheets/custom.css.scss */
+/* line 65, ../../app/assets/stylesheets/custom.css.scss */
 .jfooter ul li {
   float: left;
   padding-left: 20px;
 }
 
 /* More emphasize on the content */
-/* line 71, ../../app/assets/stylesheets/custom.css.scss */
+/* line 75, ../../app/assets/stylesheets/custom.css.scss */
 .carousel-caption .contentDescriptor {
   background-color: rgba(255, 0, 0, 0.5);
   display: inline-block;
@@ -6906,63 +6912,63 @@ body .jcontainer {
 /* some media queries for search bar*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 83, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 87, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 200px;
   }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-  /* line 91, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 95, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 300px;
   }
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-  /* line 99, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 103, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 200px;
   }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 109, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 113, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 500px;
   }
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 120, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 124, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 500px;
   }
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 131, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 135, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 500px;
   }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* line 140, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 144, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 700px;
   }
 }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-  /* line 149, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 153, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 800px;
   }
 }
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 159, ../../app/assets/stylesheets/custom.css.scss */
+  /* line 163, ../../app/assets/stylesheets/custom.css.scss */
   .customSearchBar {
     width: 200px;
   }

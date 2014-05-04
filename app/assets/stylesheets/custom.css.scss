@@ -5,6 +5,10 @@ $grayLight: #999;
 $gray: #555;
 $grayDarker: #222;
 
+.articlePic {
+    max-width: 500px;
+    max-height: 500px;
+}
 #WriteArticleSpan * {
     display: inline-block;
 }
