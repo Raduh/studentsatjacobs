@@ -1,5 +1,8 @@
 <% provide(:title, 'Wall') %>
 <div class="container jcontainer">
+<% flash.each do |k, v| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
   <div id="WriteArticleSpan">
   <h1 >Latest articles</h1>
   <%= link_to "Write article!", write_path, class: "btn btn-large btn-primary pull-right" %>

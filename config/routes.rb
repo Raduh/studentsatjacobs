@@ -8,7 +8,8 @@ StudentsAtJacobs::Application.routes.draw do
   match "/contact", to: "StaticPages#contact"
   
   match "/write", to: "Users#write"
-  match "/doAuth", to: "Users#doAuth"
+  match "/doAuth", to: "Users#doAuth", via: :post
+  match "/doPosting", to: "Articles#doPosting", via: :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
