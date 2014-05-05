@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   end
 
   def doAuth
-      @usr = params[:ldapUser]
+      @usr = params[:ldapUser].downcase
       @pass = params[:ldapPass]
       if (@usr == "admin" && @pass == "admin")
           flash[:success] = "You're logged in"
