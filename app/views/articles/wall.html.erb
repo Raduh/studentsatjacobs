@@ -8,17 +8,25 @@
   <%= link_to "Write article!", write_path, class: "btn btn-large btn-primary pull-right" %>
   </div>
 
-  <% @articles.each do |article| %>
+  <% @articles.each_with_index do |article, i| %>
     <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><%= article.title %></h2>
-          <p class="lead"><%= article.content %></p>
-        </div>
+    <div class="row featurette">
+    <% if (i % 2) == 1 %>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive articlePic" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
+      </div>
+    <% end %>
+
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><%= article.title %></h2>
+        <p class="lead"><%= article.content %></p>
+      </div>
+      <% if (i % 2) == 0 %>
         <div class="col-md-5">
           <img class="featurette-image img-responsive articlePic" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
         </div>
-      </div>
+    <% end %>
+    </div>
     <% end %>
 
 </div>
