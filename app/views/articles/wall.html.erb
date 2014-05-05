@@ -4,7 +4,7 @@
   <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
   <div id="WriteArticleSpan">
-  <h1 >Latest articles</h1>
+      <h1>Latest articles</h1>
   <%= link_to "Write article!", write_path, class: "btn btn-large btn-primary pull-right" %>
   </div>
 
@@ -13,17 +13,21 @@
     <div class="row featurette">
     <% if (i % 2) == 1 %>
       <div class="col-md-5">
-        <img class="featurette-image img-responsive articlePic" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
+        <img class="featurette-image img-responsive articlePic pull-left" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
       </div>
     <% end %>
 
       <div class="col-md-7">
         <h2 class="featurette-heading"><%= article.title %></h2>
-        <p class="lead"><%= article.content %></p>
+        <div class="lead">
+          <p><%= article.content %></p>
+          <span class="pull-right">by <a href="#"><%= article.username %></a></span>
+          <span class="pull-left timestamp">Posted <%= time_ago_in_words(article.created_at) %> ago.</span>
+        </div>
       </div>
       <% if (i % 2) == 0 %>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive articlePic" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
+          <img class="featurette-image img-responsive articlePic pull-right" src="<%= toImageSrc article.imageurl %>" alt="Article picture">
         </div>
     <% end %>
     </div>
