@@ -12997,10 +12997,17 @@ if(!String.prototype.formatNum) {
 		//e.stopPropagation();
 	});
 }(jQuery));
-(function() {
+function updateCounter() {
+    // 100 is the min message length
+    var written = $('#newPageContent').val().length;
+    $('.counter').text(written + ' characters');
+}
 
-
-}).call(this);
+$(function() {
+    updateCounter();
+    $('#newPageContent').change(updateCounter);
+    $('#newPageContent').keyup(updateCounter);
+});
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
