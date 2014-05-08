@@ -50,7 +50,15 @@
 function updateCounter() {
     // 100 is the min message length
     var written = $('#newPageContent').val().length;
-    $('.counter').text(written + ' characters');
+    // we will only have one counter
+    var counter = $('.counter')[0];
+    counter.textContent = (written + ' characters');
+
+    if (written >= 100) {
+        counter.style.color = "green";
+    } else {
+        counter.style.color = "red";
+    }
 }
 
 $(function() {
