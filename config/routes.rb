@@ -10,6 +10,9 @@ StudentsAtJacobs::Application.routes.draw do
   match "/write", to: "Users#write"
   match "/doAuth", to: "Users#doAuth", via: :post
   match "/doPosting", to: "Articles#doPosting", via: :post
+
+  match '/search', to: "Search#search"
+  match '/foundholder', to: "StaticPages#foundholder"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

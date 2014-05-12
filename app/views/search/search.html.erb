@@ -1,0 +1,23 @@
+<div class="container jcontainer">
+<% if @article_results.empty? %>
+    <p>Sorry, there were no results for your query.</p>
+<% else %>
+  <ul class="search_results">
+    <% @article_results.each do |article_result| %>
+      <li>
+        <%# the 'highlight' hash is escaped HTML with unescaped <em> tags around the highlight data, so we call html_safe to render the tags %>
+        <h3><%= link_to (article_result['highlight'].try(:[], 'title').try(:html_safe) || article_result['title']), '/foundholder' %></h3>
+        <%= article_result['highlight'].try(:[], 'content').try(:html_safe) || article_result['content'] %>
+      </li>
+    <% end %>
+  </ul>
+
+  <% if @results.current_page > 1 %>
+    <%= link_to '< previous', search_path(:q => params[:q], :page => @results.current_page - 1) %>
+  <% end %>
+
+  <% if @results.num_pages > @results.current_page %>
+    <%= link_to 'next >', search_path(:q => params[:q], :page => @results.current_page + 1) %>
+  <% end %>
+<% end %>
+</div>

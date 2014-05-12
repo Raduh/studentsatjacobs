@@ -14,12 +14,12 @@
           </button>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-left form-inline" id="search" role="search">
+          <form accept-charset="UTF-8" class="navbar-form navbar-left form-inline" id="search" role="search" action="/search" method="get">
               <div class="form-group-group">
               <div class="input-group customSearchBar">
-                  <input type="text" id='st-search-input' class="form-control" placeholder="Search for articles">
+                  <input type="text" name="stsearch" id='stsearch' class="form-control" placeholder="Search for articles">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><b class="glyphicon glyphicon-search"></b></button>
+                    <button class="btn btn-default" type="submit"><b class="glyphicon glyphicon-search"></b></button>
                   </span>
               </div>
             </div>
@@ -51,7 +51,7 @@
 
 <script>
   $(function() {
-    $('#st-search-input').swiftype({
+    $('#stsearch').swiftype({
       engineKey: '<%= ENV['SWIFTYPE_ENGINE_KEY'] %>'
     });
   });
