@@ -13,7 +13,7 @@ task :index_articles => :environment do
     documents = articles.map do |article|
       {:external_id => article.id,
        :fields => [{:name => 'title', :value => article.title, :type => 'string'},
-                   {:name => 'body', :value => article.content, :type => 'text'},
+                   {:name => 'content', :value => article.content, :type => 'string'},
                    {:name => 'url', :value => '/foundholder', :type => 'enum'},
                    {:name => 'created_at', :value => article.created_at.iso8601, :type => 'date'}]}
     end

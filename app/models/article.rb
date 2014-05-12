@@ -6,6 +6,7 @@ class CreateOrUpdateSwiftypeDocumentJob < Struct.new(:article_id)
                                          "articles",
                                          {:external_id => article.id,
                                           :fields => [{:name => 'title', :value => article.title, :type => 'string'},
+                                                      {name: 'url', value: '/foundholder', type: 'enum'},
                                                       {:name => 'content', :value => article.content, :type => 'text'},
                                                       {:name => 'created_at', :value => article.created_at.iso8601, :type => 'date'}]})
     end
