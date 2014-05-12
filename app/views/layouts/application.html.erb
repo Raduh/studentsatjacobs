@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="/assets/jacobsFavicon.png">
   <!-- Bootstrap core CSS -->
   <link href="/assets/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/autocomplete.css" rel="stylesheet" media="all">
   <% if @location == "" %>
     <link href="/assets/calendar.css" rel="stylesheet">
   <% end %>
@@ -23,6 +24,7 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
+  <div id="st-results-container" class="st-result-listing"></div>
   <%= yield %>
   <%= render 'layouts/footer' %>
   <!-- Bootstrap core JavaScript
@@ -30,6 +32,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/assets/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.swiftype.autocomplete.js"></script>
   <% if @location == "" %>
     <script type="text/javascript" src="/assets/underscore.js"></script>
     <script type="text/javascript" src="/assets/calendar.js"></script>

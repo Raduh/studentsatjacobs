@@ -15,4 +15,7 @@
 /tmp
 
 # Ignore TODO
-TODO
+/TODO
+
+# Swiftype environment variables
+/.env
