@@ -1,0 +1,31 @@
+*(done)* ban IP outside Jacobs
+*(done)* add Post controller/Model
+*(done)* create user in DB at login
+*(done)* add calendar
+*(done)* add page display (use featurette?)
+*(done)* add name of creator to article featurettes
+*(done)* add create_at to article featurettes
+*(done)* add article saving capabilities for the form !!
+*(done)* put 'write article' somewhere else (above title?)
+*(done)* Switch jVoices with jMap
+*(done)* if even, featurette pic should be on left. If odd, on right
+*(done)* default picture if imageurl invalid
+*(done)* create new article not new page
+*(done)* use default scope order
+*(done)* add events
+*(done)* (maybe) working searchbar?
+*(done)* add wrap for microposts?
+*(done)* add character counter
+*(done)* resize picture from post
+*(done)* WEIRD BUGS paginate articles
+*(done)* (maybe) add year & month label to calendar
+*(done)* some pic (recommended) to article
+*(done)* ssl?
+*(done)* smallcase user
+*(maybe) color for counter
+*(done)* fix counter not showing on heroku
+*(done)* update image Indian CID
+*(done)* edit front page Headings with actual content
+add page generator for full article
+add delete button for each article for user (and admin)
+(maybe) cache post details in case of error
