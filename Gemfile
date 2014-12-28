@@ -6,6 +6,8 @@ gem 'swiftype'
 gem 'delayed_job_active_record'
 gem 'foreman'
 
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
